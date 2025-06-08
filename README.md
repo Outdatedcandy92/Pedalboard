@@ -1,6 +1,6 @@
 # DIY Guitar Pedals
 
-	This project aims to create a DIY friendly and Mod-able version of  the iconic Boss DS-1 and Big Muff Pi.
+>This project aims to create a DIY friendly and Mod-able version of  the iconic Boss DS-1 and Big Muff Pi.
 
 Modern guitar pedals such as the DS-1 and Big Muff Pi are **super expensive**!! and the new pedals that are being produced all have SMD components which make it harder to mod and repair. I always wanted to get a DS-1 but its price tag really put me off, so I did a bit of research and found a really good circuit analysis of the DS-1 on [ElectroSmash's Website](https://www.electrosmash.com/boss-ds1-analysis) and decided to create my own [DS-1](https://github.com/Outdatedcandy92/DistortionPedal) and it was really rewarding project and the results were also very good. 
 Since my DS-1 Version 1 had really good results, I decided to design an even upgraded version of it which fixes problems in version 1, In addition to that I also created a PCB for the Big Muff Pi.
