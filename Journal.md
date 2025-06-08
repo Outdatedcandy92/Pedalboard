@@ -1,15 +1,14 @@
-# DIY Distortion & Fuzz Pedal
 
 ## What am I making?
-I'm making cheap DIY analog guitar effect pedals for Distortion and Fuzz. To ensure a high quality pedal I will be using reverse engineered schematic of the iconic Boss DS-1 and the Big Muff Pi. Careful planning will be done to ensure that these DIY pedals perform equally as well only for a fraction of the price, while still keeping in mind Mod-ability and ease of repair.
-## Time Spent: 10 Hours
+I'm making cheap DIY analog guitar effect pedals for Distortion and Fuzz. To ensure a high quality pedal I will be using reverse engineered schematic of the iconic Boss DS-1 and the Big Muff Pi. Careful planning will be done to ensure that these DIY pedals perform equally as well only for a fraction of the price, while still keeping in mind the Mod-ability and ease of repair.
+## Time Spent: 28 Hours
 
 ### My Goals For This Project-
 - [ ] Only THT Components
 - [ ] Easy to modify
 - [ ] Cheap components
 
-# Day 1 (17th May)
+# Day 1 (17th May) - Started DS-1 
 
 Since I already made a DS-1 pedal before I had experience with designing pedals and I also knew about stuff I should avoid adding in my design.
 Some of those problems were -
@@ -37,7 +36,7 @@ This was the final result PCB design:
 
 I was pretty locked in today!
 
-# Day 2 (19th May)
+# Day 2 (19th May) - Big Muff Schematic
 
 I started working on designing the big muff pi schematic today. 
 
@@ -55,7 +54,7 @@ After that I started working on the PCB for it. I again followed the same method
 
 ## Time Spent: 3 Hours
 
-# Day 3 (5th June)
+# Day 3 (5th June) - Updated DS-1 PCB
 
 tl;dr I was pretty ambitious when starting this project but I have now decided to split this into three different projects.
 
@@ -78,3 +77,151 @@ I updated the footprints and fixed the problem.
 
 
 ## Time Spent: 2 Hours
+
+# Day 4 (6th June) - Big Muff PCB
+
+Today I started working on routing the Big Muff Pi, It was a pretty long and boring process but here is the final result
+
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1abad4393a3eabd854601cc3e34a848323cbad31_image.png)
+
+I'm not super happy with the way it came out for a few reasons-
+- The power traces are long and cross through a lot of audio signals, while the traces cant be made any shorter I could route them in a much more efficient way.
+- Very dense layout led to a lot of audio traces to be routed from on the bottom layer, while this is not that big of a deal I would prefer if most of the audio traces were on the top layer and only power traces were on the bottom
+
+
+I also started working on making a BOM for this project today, I spent a lot of time just surfing on aliexpress for cheap component kits which include everything I require for this project. This took a few hours because I had to cross check the component values from the aliexpress listings to the component values required. Overall I finished about 60% of the BOM today.
+
+
+## Time Spent: 5 Hours 
+
+# Day 5 (June 7th) - Redid Everything
+
+I finished making the BOM today and the overall cost comes up to about $90 USD which is a bit expensive but not bad considering that this is the cost for two pedals which would be something $180 USD if buying the originals. Also with all the parts in the BOM you could make about at least 4 of these pedals, the only thing bringing up the cost in our DIY scenario is the 125B Aluminium Enclosure. I think spending money on a Aluminium enclosure is 100% worth it, I've tried using a plastic case for my DS-1 version 1 and wrapping it with aluminium foil but it just doesn't shield it from EMI properly and is a big hassle overall, Its much better to get a solid enclosure which can handle the stomping and shield the internal circuitry from EMI.
+
+
+I also decided to reroute the whole Big Muff PCB again and here are the results-
+*Front*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/5241b56e8a70432a7d0f55446fb12f0e46854558_image.png)
+
+*Back*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/601dab8ba99361513f2b0abeb3075757811a7bf4_image.png)
+
+*With Fill*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7273132403e562de15dd93ac5b7b7c616d8ee627_image.png)
+
+Even though the Big Muff's schematics were easier compared to DS-1, routing the Big Muff was way way harder. This was a very dense layout and very complicated to route but nevertheless I finished routing It.
+
+---
+
+Well on second though I decided to completely scrape my PCB design and start a new one from scratch. There were far too many problems with the routing on version 1 of the Big Muff, there were a lot of traces overlapping and long power traces parallel to audio traces.
+I decided to increase the board size a bit and have two separate screw in terminals for the guitar input and output. This was the layout I finally decided on-
+
+
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/567903da78c23ae1ac594554e24a8dccc07a1c3c_image.png)
+
+In my humble opinion I would like to say that I absolutely cooked while making this. Its just so beautiful and organized, and much much better than the previous layout.
+
+*PCB Front*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/ddd322f25ebd5b38c401236eb1ea84b0053ffc6e_image.png)
+
+
+*PCB Back*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/3d96c60acc4c91985b7a28429d333e024697f7f1_image.png)
+
+*PCB*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/ac656863df975bfa0b7e72c1b876d8717b4d8cfd_image.png)
+
+
+*CAD Render*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2e59068f2ce806d0a5745d3fc0423c9e5b110de0_image.png)
+
+--- 
+
+I also create a basic CAD design for the case, I'm gonna be using a 125B Aluminium enclosure so there was not much to design, I just had to place the components to get a rough idea of where to drill the holes later on. Anyways here is the case -
+
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/cfc9453dcd8d3666d0fb4c247b695b5bdb508f5a_125b_enclosure_2025-jun-07_12-51-06am-000_customizedview11464864200.png)
+
+I'm still unsure if I should add some spray paint in my BOM and make my pedal colorful instead of just a grey box.
+
+---
+
+I also decided I should try panelizing the PCBs and order both PCB as one board to save cost and get more boards, but in order to do that I had to reduce the size of the DS-1 PCB down a few mm. So I decided to start off fresh for the DS-1 PCB and this time set the board size to 45x45mm. I spent a few hours creating a new layout and ended up with this -
+
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0a9d385566b89c69367bca417a419022b90fe2d_image.png)
+
+
+After about a hour or so of routing I ended up with this masterpiece-
+
+*Front*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/80c69d956be07b5dda928683f6bde767b527a536_image.png)
+
+*Back*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/26d07e67378cf536912ff92b1a172cab46152e14_image.png)
+
+*Render*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b2ed8e9d1a9971c9dd3602b0246c67e00353a1aa_image.png)
+
+
+I also have like 22 DRC errors about edge clearance violations and courtyard overlaps but I'm gonna pretend like I didn't see that.
+
+---
+
+I panelized my design now I can now get 5 boards each for the price of 1. There probably wasn't a need to do this as ordering it separately would have only costed like 2 dollars more but I always wanted to learn how to panelize and this seemed like a great opportunity for it.
+
+
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d5a9773383e302a2ca86a53a56aed9d6dd1f1b9c_image.png)
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/6653a59bb203543249d7d11b3a6e49c518e11d44_image.png)
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1596e07609f5a1324d6c66d9fb8c6b7baf76ec2f_image.png)
+
+
+I can fit like 4 boards (2 of each design) into one panel but I think ill use the rest of the space for a 3PDT switch breakout board which I'll make tommorow.
+
+
+
+Overall I would say today was my most productive day, I've been working on this project since morning and basically redid everything today.
+
+
+## Time Spent: 10 Hours
+
+
+# Day 6 (7th June)
+
+I decided to make a breakout board for the 3PDT footswitch as soldering wires directly to it gets messy after a while. I made the design in Easyeda because they had a footprint for the switch, then I imported it into KiCad.
+
+*PCB In EasyEDA*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8f0d062a54729fcb33d8bbb62a38bb2c2874cb12_image.png)
+
+*PCB imported into KiCad*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e5def51b85f94b1981788fc15cb8843325f615db_image.png)
+
+*Breakout Board Render*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8ba7859b6a02d077e75f994ae019292d2aa9a6cb_image.png)
+
+---
+My project was basically finished at this point. I added the breakout board into the panelized design and this was the result-
+
+*PCB Panel*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/9b8d28280f60deba9344da6395de598d7bbe2e9f_image.png)
+
+*Panel Render*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/9489a9e9bd9fa25c4807ea5a505616cb3126f9db_image.png)
+
+---
+
+**Aw hell nah!** The panel actually ended up costing more, I guess jlcpcb doesn't like it when you cram 3 different designs onto a single board. 
+
+*Panelized Design*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/75a7658ec37d09bba6f471b37906b7d41319e920_image.png)
+
+*Individual PCBs*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/45ce8c03cfd95cc1f68024e101e1ac0fd4c7db5a_image.png)
+
+
+Well panelizing it was a waste of time but atleast I learned something new.
+
+---
+
+I spent about an hour or so updating my BOM and formatting everything in the project repo, the overall cost comes up to about $130 USD which is a bit more that I anticipated but hey atleast the pedal will look good this time.
+
+
+## Time Spent: 3 Hours
