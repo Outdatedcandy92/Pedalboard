@@ -6,6 +6,14 @@ Modern guitar pedals such as the DS-1 and Big Muff Pi are **super expensive**!! 
 Since my DS-1 Version 1 had really good results, I decided to design an even upgraded version of it which fixes problems in version 1, In addition to that I also created a PCB for the Big Muff Pi.
 
 
+
+
+
+https://github.com/user-attachments/assets/e87293e5-299d-45d1-807d-6a7f5c813e14
+
+https://github.com/user-attachments/assets/bea94fd8-728a-4ede-ab68-e8244417e8f7
+
+
 *DS-1 PCB*
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a1b9ffed037abc444fab042f3a4400229bf7e716_20250719_181108.jpg)
 
