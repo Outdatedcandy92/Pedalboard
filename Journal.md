@@ -1,7 +1,7 @@
 
 ## What am I making?
 I'm making cheap DIY analog guitar effect pedals for Distortion and Fuzz. To ensure a high quality pedal I will be using reverse engineered schematic of the iconic Boss DS-1 and the Big Muff Pi. Careful planning will be done to ensure that these DIY pedals perform equally as well only for a fraction of the price, while still keeping in mind the Mod-ability and ease of repair.
-## Time Spent: 28 Hours
+## Time Spent Overall: 53 Hours
 
 ### My Goals For This Project-
 - [ ] Only THT Components
@@ -225,3 +225,79 @@ I spent about an hour or so updating my BOM and formatting everything in the pro
 
 
 ## Time Spent: 3 Hours
+
+
+# 23 June - Painting the enclosures
+
+Most of my parts have arrived by now. I'm now waiting for my pinecil to arrive so I can solder the board (I broke my aliexpress iron).
+
+I 3D printed a stencil as a guide for drilling holes in my enclosure (People usually print it out on paper and then use it but I don't have a regular printer so I decided to 3D print it), I drilled out 2 aluminium enclosures using my cordless Ikea drill and a step drill bit. This took a long time and created a lot of aluminum shavings in my room. 
+
+![img]()
+
+I sanded down both the enclosures with a 150 grit sandpaper (that was the highest grid I had, ideally you should go with 600 or higher) and then spray painted them outside.
+
+The black enclosure sort of got a wierd hammertone finish almost by complete accident and I like it a lot so I'm gonna keep it.
+II tried cutting a tape stencil on the orange one but realized that the knife had actually cut the paint and left marks, so I decided to start over again. I resanded the enclosure, had to remove all the paint from it which was a long and tedious process, and then spray painted it again. This time I decided to leave it as is and not add a stencil.
+
+*Sanded orange enclosure*
+![img]()
+
+*final enclosures*
+![img]()
+## Time Spent: 7 Hours
+
+# June 24 - More painting
+
+Today I sanded the bottom of the enclosures and painted them too.
+
+## Time Spent: 1 Hours
+
+# June 26 - DS-1
+
+My pinecil arrived today and I soldered my DS-1 board. It DID NOT work.
+I'll have to most likely start over again and this time check the outputs at every stage
+
+![img]()
+
+## Time Spent: 2 Hours
+
+# June 28 - Big Muff Assembly
+
+I soldered up my big muff board today, I made sure to check its output at every stage before moving on, the final assembled board was outputting something on my oscilloscope which was a nice sign but it was really late at night so I did not actually test it.
+
+## Time Spent: 4 Hours
+
+# June 29 - Big Muff Testing
+
+I tested out my big muff today and it WORKS! the sound is a bit choppy kind of, and cuts off if i close the enclosure, it sound a lot different than my old DS-1, and it kind of sounds muffed which makes sense cause its the big muff (duh).
+
+Also I did a 1000iq move, so I actually messed up my 3PDT breakout board by making the pads too small to fit, well, I'm very smart so I ended up surface mounting the THT switch on it and well it works! 
+## Time Spent: 2 Hours
+
+# July 3 - DS-1 Troubleshooting
+
+I tried soldering another DS-1 board and this time checking its output on every stage, and it turn out I used the wrong symbol/footprint for my transistor. 
+It turns out not all transistors have the standard cbe layout some have a messed up bce layout which I had no idea even existed.
+
+## TIme Spent: 1 Hour
+
+# July 5 - DS-1 Jank
+
+So luckily I had a transistor kit and one of those transistors had a bce layout.
+I accidentally soldered in my op amp the wrong way on the pcb and desoldering it was impossible so I had to start again.
+
+After finally assembling everything properly this time I went on to test the pedal, to be honest it sounded pretty awful, it was very quiet and buzzy because of the swapped out transistors. At this point i just decided to order a new pcb with fixed footprint for the transistor.
+
+## Time Spent: 5 Hours
+
+
+# 19 July - DS-1 Works!
+
+I got my new PCB and soldering everything together, I ran out of screw in terminals so I just soldered the wires directly on the PCB.
+
+The DS-1 works now, but it kinda pops a lot which I'm assuming is probably because of a loose wire connection to the potentiometer.
+
+
+## Time Spent: 3 Hours
+
