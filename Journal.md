@@ -233,23 +233,23 @@ Most of my parts have arrived by now. I'm now waiting for my pinecil to arrive s
 
 I 3D printed a stencil as a guide for drilling holes in my enclosure (People usually print it out on paper and then use it but I don't have a regular printer so I decided to 3D print it), I drilled out 2 aluminium enclosures using my cordless Ikea drill and a step drill bit. This took a long time and created a lot of aluminum shavings in my room. 
 
-![img]()
-
 I sanded down both the enclosures with a 150 grit sandpaper (that was the highest grid I had, ideally you should go with 600 or higher) and then spray painted them outside.
 
 The black enclosure sort of got a wierd hammertone finish almost by complete accident and I like it a lot so I'm gonna keep it.
 II tried cutting a tape stencil on the orange one but realized that the knife had actually cut the paint and left marks, so I decided to start over again. I resanded the enclosure, had to remove all the paint from it which was a long and tedious process, and then spray painted it again. This time I decided to leave it as is and not add a stencil.
 
 *Sanded orange enclosure*
-![img]()
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7121a2243704cef36f84415232f6969b83e03953_20250623_183949.jpg)
 
 *final enclosures*
-![img]()
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/9535cb53d0e491717b7fe6859078aafa27a8d424_20250623_223845.jpg)
 ## Time Spent: 7 Hours
 
 # June 24 - More painting
 
 Today I sanded the bottom of the enclosures and painted them too.
+
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a5040184c5a52634956657ca1415ca0b29a97e40_1000016369.jpg)
 
 ## Time Spent: 1 Hours
 
@@ -258,13 +258,24 @@ Today I sanded the bottom of the enclosures and painted them too.
 My pinecil arrived today and I soldered my DS-1 board. It DID NOT work.
 I'll have to most likely start over again and this time check the outputs at every stage
 
-![img]()
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/3123b2993f8ef0b81d4e024f81748b9efb32af01_20250625_145055.jpg)
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1564b37ec636c6971cb64df233776b6bed9ead3e_20250705_225522.jpg)
+
+no worky :c
 
 ## Time Spent: 2 Hours
 
 # June 28 - Big Muff Assembly
 
 I soldered up my big muff board today, I made sure to check its output at every stage before moving on, the final assembled board was outputting something on my oscilloscope which was a nice sign but it was really late at night so I did not actually test it.
+
+
+*testing its output on a scope*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/17fceb7a6e93046914cdea8b6a2457a8b9784692_20250628_223758.jpg)
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/05424a5f93e630c1fd0e2e8dceb9da32005a237a_20250628_235135.jpg)
+
+*Final Assembled PCB*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/048aa591f96ce2d11c4de850076ea911a1355a0e_20250705_202006.jpg)
 
 ## Time Spent: 4 Hours
 
@@ -273,6 +284,12 @@ I soldered up my big muff board today, I made sure to check its output at every 
 I tested out my big muff today and it WORKS! the sound is a bit choppy kind of, and cuts off if i close the enclosure, it sound a lot different than my old DS-1, and it kind of sounds muffed which makes sense cause its the big muff (duh).
 
 Also I did a 1000iq move, so I actually messed up my 3PDT breakout board by making the pads too small to fit, well, I'm very smart so I ended up surface mounting the THT switch on it and well it works! 
+
+*surface mounted tht*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/6a2c439284895f221f38c3ba4907877616214fc3_20250629_143119.jpg)
+
+*video demo*
+https://github.com/user-attachments/assets/e87293e5-299d-45d1-807d-6a7f5c813e14
 ## Time Spent: 2 Hours
 
 # July 3 - DS-1 Troubleshooting
@@ -280,12 +297,18 @@ Also I did a 1000iq move, so I actually messed up my 3PDT breakout board by maki
 I tried soldering another DS-1 board and this time checking its output on every stage, and it turn out I used the wrong symbol/footprint for my transistor. 
 It turns out not all transistors have the standard cbe layout some have a messed up bce layout which I had no idea even existed.
 
+*breadboarding the transistor and finding out it has a different pinout*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/3afb3cb6833fdfec67a14678015e694b8b6b4a80_20250703_205436.jpg)
+
 ## TIme Spent: 1 Hour
 
 # July 5 - DS-1 Jank
 
 So luckily I had a transistor kit and one of those transistors had a bce layout.
 I accidentally soldered in my op amp the wrong way on the pcb and desoldering it was impossible so I had to start again.
+
+*PCB*
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1564b37ec636c6971cb64df233776b6bed9ead3e_20250705_225522.jpg)
 
 After finally assembling everything properly this time I went on to test the pedal, to be honest it sounded pretty awful, it was very quiet and buzzy because of the swapped out transistors. At this point i just decided to order a new pcb with fixed footprint for the transistor.
 
@@ -298,6 +321,11 @@ I got my new PCB and soldering everything together, I ran out of screw in termin
 
 The DS-1 works now, but it kinda pops a lot which I'm assuming is probably because of a loose wire connection to the potentiometer.
 
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/bf9fb548a2c735d4fe3c2f118c4f5f45b9ec509a_20250705_230719.jpg)
 
+
+
+*video demo*
+https://github.com/user-attachments/assets/bea94fd8-728a-4ede-ab68-e8244417e8f7
 ## Time Spent: 3 Hours
 
